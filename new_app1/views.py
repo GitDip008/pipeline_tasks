@@ -18,7 +18,7 @@ def index(request):
     for x in u_value:
         count = Destination.objects.filter(Log_Category__contains=x).count()
         log_values[x] = count
-    print(len(log_values))
+    # print(len(log_values))
 
 
     # For Line chart
